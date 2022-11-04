@@ -17,17 +17,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => 'Chandra Arcychan Azfar',
-            'email' => 'chandraarcychan@gmail.com',
-            'password' => bcrypt('22mei2001')
-        ]);
+        User::factory(3)->create();
 
-        User::create([
-            'name' => 'Salsabila Febrianty Nurul Putri',
-            'email' => 'salsabilafnp_@gmail.com',
-            'password' => bcrypt('27mei2001')
-        ]);
+        //User::create([
+        //    'name' => 'Chandra Arcychan Azfar',
+        //    'email' => 'chandraarcychan@gmail.com',
+        //    'password' => bcrypt('22mei2001')
+        //]);
+
+        //User::create([
+        //    'name' => 'Salsabila Febrianty Nurul Putri',
+        //    'email' => 'salsabilafnp_@gmail.com',
+        //    'password' => bcrypt('27mei2001')
+        //]);
 
         Category::create([
             'name' => 'Web Programming',
@@ -39,41 +41,43 @@ class DatabaseSeeder extends Seeder
             'slug' => 'personal'
         ]);
 
-        Post::create([
-            'category_id' => 1,
-            'user_id' => 1,
-            'title' => 'Judul Pertama',
-            'slug' => 'judul-pertama',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
-            'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
-        ]);
+        Post::factory(20)->create();
 
-        Post::create([
-            'category_id' => 1,
-            'user_id' => 2,
-            'title' => 'Judul Kedua',
-            'slug' => 'judul-kedua',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
-            'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
-        ]);
+        //Post::create([
+        //    'category_id' => 1,
+        //    'user_id' => 1,
+        //    'title' => 'Judul Pertama',
+        //    'slug' => 'judul-pertama',
+        //    'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
+        //    'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
+        //]);
 
-        Post::create([
-            'category_id' => 2,
-            'user_id' => 1,
-            'title' => 'Judul Ketiga',
-            'slug' => 'judul-ketiga',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
-            'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
-        ]);
+        //Post::create([
+        //    'category_id' => 1,
+        //    'user_id' => 2,
+        //    'title' => 'Judul Kedua',
+        //    'slug' => 'judul-kedua',
+        //    'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
+        //    'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
+        //]);
 
-        Post::create([
-            'category_id' => 2,
-            'user_id' => 2,
-            'title' => 'Judul Keempat',
-            'slug' => 'judul-keempat',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
-            'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
-        ]);
+        //Post::create([
+        //    'category_id' => 2,
+        //    'user_id' => 1,
+        //    'title' => 'Judul Ketiga',
+        //    'slug' => 'judul-ketiga',
+        //    'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
+        //    'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
+        //]);
+
+        //Post::create([
+        //    'category_id' => 2,
+        //    'user_id' => 2,
+        //    'title' => 'Judul Keempat',
+        //    'slug' => 'judul-keempat',
+        //    'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo.',
+        //    'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati laborum expedita exercitationem, rerum odio molestias consequuntur sit officiis quas!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque, autem soluta molestiae eveniet ut blanditiis voluptatibus accusantium? Iste ut sapiente aliquid eveniet ex, quod amet aspernatur quo enim dolore.</p>'
+        //]);
 
         // \App\Models\User::factory(10)->create();
 
