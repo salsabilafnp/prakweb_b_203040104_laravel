@@ -65,5 +65,7 @@ Route::get('/dashboard', function () {
   return view('dashboard.index');
 })->middleware('auth');
 
+//otomatis slug
+Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
 //dashboard post
 Route::resource('dashboard/posts', DashboardPostController::class)->middleware('auth');
